@@ -65,4 +65,4 @@ A collection of blog posts and videos that explain the core concepts of world mo
 - [Can agents learn inside of their own dreams?](https://worldmodels.github.io)
 - [World Models](https://rohitbandaru.github.io/blog/World-Models/)
 - [World models — a reinforcement learning story](https://smartlabai.medium.com/world-models-a-reinforcement-learning-story-cdcc86093c5)
-
+- [1X World Model](https://www.1x.tech/discover/redwood-ai-world-model)
