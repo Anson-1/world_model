@@ -10,6 +10,7 @@
 - [Large-Scale Generative World Models ✨](#large-scale-generative-world-models-)
 - [Open Source Implementations 💻](#open-source-implementations-)
 - [Key Application Areas 🎯](#key-application-areas-)
+- [Useful Resources](#useful-resources-)
 
 ## Core Technical Challenges & Insights
 - **High-Dimensional Perception:** How to compress complex visual inputs (like video) into a meaningful, low-dimensional representation.
@@ -58,4 +59,10 @@ Architectural innovations that pushed the boundaries of what world models can do
    - **🎮 Gaming & Interactive Media**
       - Automatically generating endless, novel game levels and virtual worlds.
       - Training smarter NPCs that can anticipate player actions and react intelligently.
+## Useful Resources
+A collection of blog posts and videos that explain the core concepts of world models in an intuitive way.
+- [From Video Generation to World Model](https://world-model-tutorial.github.io)
+- [Can agents learn inside of their own dreams?](https://worldmodels.github.io)
+- [World Models](https://rohitbandaru.github.io/blog/World-Models/)
+- [World models — a reinforcement learning story](https://smartlabai.medium.com/world-models-a-reinforcement-learning-story-cdcc86093c5)
 
