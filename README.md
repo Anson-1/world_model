@@ -31,6 +31,20 @@
    - **[Mastering Diverse Domains through World Models](https://arxiv.org/abs/2301.04104)** (DreamerV3)
    - **Contribution:** As the most direct successor to the "World Models" paper, this series combines latent space learning with gradient-based optimization. It has achieved
       state-of-the-art results on many reinforcement learning benchmarks and is one of the most widely used models in both industry and academia.
+- **[Learning Latent Dynamics for Planning from Pixels (PlaNet)](https://arxiv.org/abs/1811.04551)** (Hafner et al., 2019)
+   - **Contribution:** The direct precursor to the Dreamer series. This paper introduced a model that learns a world model purely from images and then efficiently plans
+     future actions by "shooting" thousands of potential trajectories in the compact latent space. It established the effectiveness of latent-space planning.
+For Robotics:
+- **[Deep Visual Foresight for Planning Robot Motion](https://arxiv.org/abs/1812.00568)** (Finn et al., 2019)
+  - **Contribution:** A landmark paper in robotics that demonstrates how a robot can use a video-prediction model (a form of world model) to "foresee" the outcome of its
+     potential actions. The robot could then choose the action sequence that led to the desired outcome, enabling it to perform complex manipulation tasks like pushing objects
+     around.
+For Autonomous Driving:
+- **[GAIA-1: A Generative World Model for Autonomous Driving](https://arxiv.org/abs/2309.17080)** (Wayve, 2023)
+  - **Contribution:** A prime example of a large-scale world model built specifically for autonomous driving. GAIA-1 can generate realistic and controllable driving
+     scenarios, which can be used to train and test self-driving systems in a closed loop, significantly accelerating development.
+
+
 ## Key Architectures & Evolution 🚀
 Architectural innovations that pushed the boundaries of what world models can do.
 - **[Transformers are Sample-Efficient World Models (IRIS)](https://arxiv.org/abs/2209.00588)** (Micheli et al., 2023)
