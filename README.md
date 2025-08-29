@@ -34,15 +34,46 @@
 - **[Learning Latent Dynamics for Planning from Pixels (PlaNet)](https://arxiv.org/abs/1811.04551)** (Hafner et al., 2019)
    - **Contribution:** The direct precursor to the Dreamer series. This paper introduced a model that learns a world model purely from images and then efficiently plans
      future actions by "shooting" thousands of potential trajectories in the compact latent space. It established the effectiveness of latent-space planning.
+
 For Robotics:
 - **[Deep Visual Foresight for Planning Robot Motion](https://arxiv.org/abs/1812.00568)** (Finn et al., 2019)
   - **Contribution:** A landmark paper in robotics that demonstrates how a robot can use a video-prediction model (a form of world model) to "foresee" the outcome of its
      potential actions. The robot could then choose the action sequence that led to the desired outcome, enabling it to perform complex manipulation tasks like pushing objects
      around.
+    
 For Autonomous Driving:
 - **[GAIA-1: A Generative World Model for Autonomous Driving](https://arxiv.org/abs/2309.17080)** (Wayve, 2023)
   - **Contribution:** A prime example of a large-scale world model built specifically for autonomous driving. GAIA-1 can generate realistic and controllable driving
      scenarios, which can be used to train and test self-driving systems in a closed loop, significantly accelerating development.
+    
+For Large-Scale Generative Simulation：
+  This category focuses on training massive models that act as high-fidelity "world simulators," often for creative or general-purpose video generation.
+   - **[Sora: Video generation models as world simulators](https://openai.com/research/video-generation-models-as-world-simulators)** (OpenAI, 2024)
+     - **Contribution**: A technical report for a large-scale model capable of generating minute-long, high-definition videos from text prompts. OpenAI explicitly frames it as a "world
+       simulator," demonstrating that learning to generate realistic, physically consistent videos at scale is a path to building powerful world models.
+       
+For Offline Reinforcement Learning
+  This category addresses the critical problem of learning from fixed, pre-existing datasets, where the agent cannot explore the environment freely.
+   - [MOReL: Model-Based Offline Reinforcement Learning](https://arxiv.org/abs/2005.05951) (Kidambi et al., 2020)
+     - Contribution: A foundational paper for using world models in an offline setting. It proposes a method to first learn a world model from the static dataset and then uses an
+       "uncertainty" estimate to penalize the agent for imagining trajectories that deviate too far from the data it has already seen. This ensures the agent learns a safe and
+       conservative policy.
+       
+For Language Model Integration
+  This is a cutting-edge area that combines the common-sense reasoning of LLMs with the dynamics prediction of world models.
+   - [Language Models as Zero-Shot Planners](https://arxiv.org/abs/2201.07207) (Huang et al., 2022)
+     - Contribution: This paper demonstrates how a pre-trained Large Language Model (LLM) can be used as a high-level planner. The LLM takes a goal described in natural language (e.g.,
+       "get a can of soda") and outputs a sequence of concrete steps. This plan can then be executed by a lower-level agent, which might use its own world model to perform the basic
+       actions. It shows a powerful synergy between LLM reasoning and world model execution.
+       
+For Alternative Model-Based Approaches
+  This category includes other influential early papers that explored different ways to leverage learned models.
+   - [SimPLe: Simulated Policy Learning in Complex Environments](https://arxiv.org/abs/1903.00374) (Kaiser et al., 2019)
+     - Contribution: An important early work that, similar to Dreamer, showed how a learned video-prediction model could be used to train a policy and achieve high sample efficiency on
+       complex Atari games. It was one of the first papers to demonstrate that a model-based approach could be competitive in such a challenging domain, providing another strong data
+       point for the viability of the world model paradigm.
+
+
 
 
 ## Key Architectures & Evolution 🚀
